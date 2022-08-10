@@ -1,9 +1,3 @@
-/*Traverse a Tree:
-Pre-order Traversal, In-order Traversal, Post-order Traversal
-
-************************************/
-
-
 /**
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {
@@ -14,23 +8,11 @@ Pre-order Traversal, In-order Traversal, Post-order Traversal
  */
 /**
  * @param {TreeNode} root
- * @return {number[]}
+ * @return {boolean}
  */
- var preorderTraversal = function(root) {
-    let i = 0;
-       for(i in root){
-        console.log(root[i])
-        console.log(root[i != null])
-       }
-   
-   };
-   
-const results = [];
 
-arr.forEach(element => {
-  if (element !== null) {
-    results.push(element);
-  }
-});
+  
+ const checkTree = root => {
+  return root.val === root.left.val + root.right.val 
+};
 
-/* https://bobbyhadz.com/blog/javascript-remove-null-values-from-array */
