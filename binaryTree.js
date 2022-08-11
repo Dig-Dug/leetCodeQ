@@ -16,3 +16,20 @@
   return root.val === root.left.val + root.right.val 
 };
 
+
+
+
+function v (ar){
+ // console.log(ar);
+  let nu = []; let n = 0;
+  for(n in ar){
+    let i  = 1;
+    ar = [ (n + i) * n ]; i++
+   console.log(n, ar);
+  }
+  return ar;
+}
+
+let ar = [1,2,3,4]
+v(ar)
+
