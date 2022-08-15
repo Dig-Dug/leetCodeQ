@@ -24,10 +24,11 @@ function v (ar){
   let nu = []; let n = 0;
   for(n in ar){
     let i  = 1;
-    ar = [ (n + i) * n ]; i++
-   console.log(n, ar);
+    ar = [ (n + i) * i ]; i++
+   console.log( ar);
+   return ar;
   }
-  return ar;
+ 
 }
 
 let ar = [1,2,3,4]
